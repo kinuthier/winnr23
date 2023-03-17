@@ -11,7 +11,7 @@ type Props ={
 
 function CountdownTimer() {
     const { contract } = useContract(
-        process.env.NEXT_PUBLIC_LOTTERY_CONTRACT_ADDRESS
+        "0x8F5A1857d5Adceda80468B66ccE568f6e7C94B46"
       );
 
     const { data: expiration, isLoading: isLoadingExpiration } =
