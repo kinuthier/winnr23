@@ -22,7 +22,7 @@ const Home: NextPage = () => {
   const [ quantity, setQuantity ] = useState<number>(1);
   const [ userTickets, setUserTickets ] = useState(0);
   const { contract, isLoading } = useContract(
-    process.env.NEXT_PUBLIC_LOTTERY_CONTRACT_ADDRESS
+    "0x8F5A1857d5Adceda80468B66ccE568f6e7C94B46"
   );
 
   const { data: remainingTickets } = useContractRead(
